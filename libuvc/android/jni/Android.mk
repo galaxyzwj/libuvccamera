@@ -54,13 +54,14 @@ LOCAL_C_INCLUDES += \
 
 #LOCAL_STATIC_LIBRARIES += jpeg-turbo1400_static
 LOCAL_MODULE_TAGS := optional
-LOCAL_SHARED_LIBRARIES := libcutils libusb1.0
+LOCAL_SHARED_LIBRARIES := libcutils libusb1.0 libjpeg
 
 LOCAL_SRC_FILES := \
 	src/ctrl.c \
 	src/device.c \
 	src/diag.c \
 	src/frame.c \
+	src/frame-mjpeg.c \
 	src/init.c \
 	src/stream.c
 
